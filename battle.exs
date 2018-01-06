@@ -95,7 +95,7 @@ defmodule Match do
           defender
         true ->
           health = defender.health - damage
-          IO.puts("    [HIT] #{attacker.name} hits #{defender.name} for #{attacker.damage} (#{defender.health} -> #{health})")
+          IO.puts("    [HIT] #{attacker.name} hits #{defender.name} for #{damage} (#{defender.health} -> #{health})")
           %{defender | health: health}
       end
       {na, nd}
